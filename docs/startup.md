@@ -6,11 +6,13 @@ sudo pacman-mirrors -i -c China
 sudo pacman -Syyu
 sudo pacman -S cudn cudnn
 sudo pacman -S wqy-microhei # 语言
+```
 
+```shell	
+# 常用软件安装
 yay -Sy miniconda3
 tee -a  ~/.bashrc <<<  "source /opt/miniconda3/etc/profile.d/conda.sh"
 
-yay -Sy visual-studio-code-bin
 
 sudo pacman -Sy git
 git config --global user.name "rleavesi"
@@ -19,10 +21,7 @@ ssh-keygen -t rsa -C "2045000244@qq.com"
 
 # vim
 yay -S vim-plug fzf vim-sneak vim-signify
-```
-
-```shell	
-# 常用软件安装
+yay -Sy visual-studio-code-bin
 yay -S compton # 透明终端
 yay -Sy nitrogen  # 壁纸管理软件
 yay -Sy fish  # fish shell # set fish_greeting
@@ -76,7 +75,17 @@ export VISUAL=/usr/bin/vim
 yay -S icalingua++
 ```
 
+```shell
+# Mysql
 
+sudo pacman -S mariadb
+sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+sudo systemctl start mysqld
+sudo mysqladmin -u root password 'sql'
+sudo systmctl enable mysqld
+
+
+```
 
 #  路径
 

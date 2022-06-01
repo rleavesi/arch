@@ -1,1 +1,1 @@
-echo 80000 > /sys/class/backlight/intel_backlight/brightness
+echo 120000 > /sys/class/backlight/intel_backlight/brightness
